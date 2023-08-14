@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve --project=test-project --port=4200"
+    "start": "nx serve --project=test-project --port=4200",
+    "build-storybook": "npx nx run test-ui:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -41,10 +42,10 @@
     "@nx/web": "16.6.0",
     "@nx/workspace": "16.6.0",
     "@schematics/angular": "~16.1.0",
-    "@storybook/addon-essentials": "^7.1.0",
+    "@storybook/addon-essentials": "7.2.3",
     "@storybook/addon-interactions": "^7.1.0",
-    "@storybook/angular": "^7.1.0",
-    "@storybook/core-server": "^7.1.0",
+    "@storybook/angular": "7.2.3",
+    "@storybook/core-server": "7.2.3",
     "@storybook/jest": "~0.1.0",
     "@storybook/test-runner": "^0.11.0",
     "@storybook/testing-library": "~0.2.0",
@@ -52,6 +53,7 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "chromatic": "^6.21.0",
     "cypress": "^12.16.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",

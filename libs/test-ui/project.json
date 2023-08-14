@@ -65,7 +65,7 @@
       "executor": "@storybook/angular:build-storybook",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "outputDir": "dist/storybook/test-ui",
+        "outputDir": "storybook-static",
         "configDir": "libs/test-ui/.storybook",
         "browserTarget": "test-ui:build-storybook",
         "compodoc": false

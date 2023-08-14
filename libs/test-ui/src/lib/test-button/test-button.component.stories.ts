@@ -12,7 +12,18 @@ export default meta;
 type Story = StoryObj<TestButtonComponent>;
 
 export const Primary: Story = {
-  args: {},
+  argTypes: {
+    label: {
+      control: 'text'
+    },
+    color: {
+      control: 'text'
+    }
+  },
+  args: {
+    label: 'button',
+    color: 'black'
+  },
 };
 
 export const Heading: Story = {
